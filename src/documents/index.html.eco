@@ -2,3 +2,39 @@
 title: "Simple and Pragmatic Thoughts"
 layout: "default"
 ---
+<div id="verticle-align">
+   <div id="wrapper">
+      <div id="top">
+         <div id="avatar-2x">
+            <img src="/images/avatar-2x.png" alt="Isa Goksu" />
+         </div>
+         <div id="social-networks">
+            <div id="strike-through"></div>
+            <div id="container">
+               <i class="fa fa-twitter fa-3x"></i>
+               <i class="fa fa-linkedin-square fa-3x"></i>
+               <i class="fa fa-github-alt fa-3x"></i>
+            </div>
+         </div>
+         <div id="id-tag">
+            <img src="/images/id-tag.png" alt="isa goksu, thoughtworker, blogger, hacker" />
+         </div>
+      </div>
+      <!-- no body //-->
+      <div id="bottom">
+         <div id="signature">
+            <img src="/images/signature.png" alt="signature" />
+         </div>
+         <div id="recent-articles">
+            <h1>Recent articles...</h1>
+            <ul>
+               <li><a href="#">How to avoid null pointer exceptions?</a><span>, May 11, 2014</span></li>
+               <li><a href="#">Multiple dispatching</a><span>, May 3, 2014</span></li>
+               <li><a href="#">Scaling or not?</a><span>, April 27, 2014</span></li>
+               <li><a href="#">Gophers are working</a><span>, April 7, 2014</span></li>
+               <li><a href="#">Act like a senior developer</a><span>, March 29, 2014</span></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>

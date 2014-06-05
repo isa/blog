@@ -1,3 +1,120 @@
-h1 {
-   color: tomato
+@bgcolor: #fafafa;
+@headercolor: #4b4f55;
+@bordercolor: #dddddd;
+@datecolor: #cccccc;
+@blockwidth: 710px;
+
+html, body {
+   background-color: @bgcolor;
+   height: 100%;
 }
+
+#verticle-align {
+   height: 100%;
+   width: 960px;
+   margin: 0 auto;
+
+   &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      height: 100%;
+      margin-left: -0.25em;
+   }
+}
+
+#wrapper {
+   display: inline-block;
+   vertical-align: middle;
+   width: 99%;
+
+   #top {
+      margin: 0 auto;
+      width: @blockwidth;
+
+      #avatar-2x {
+         float: left;
+      }
+
+      #social-networks {
+         width: 300px;
+         text-align: center;
+         float: left;
+         padding-top: 70px;
+
+         #strike-through {
+            height: 2px;
+            background-color: @bordercolor;
+            position: relative;
+            top: 24px;
+         }
+
+         #container {
+            width: 200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 99;
+            background-color: @bgcolor;
+
+            i {
+               margin: 0 9px
+            }
+         }
+      }
+
+      #id-tag {
+         float: left;
+      }
+   }
+
+   #bottom {
+      clear: both;
+      width: @blockwidth;
+      margin: 0 auto;
+
+      #signature {
+         float: left;
+         text-align: right;
+         width: 146px;
+         padding-right: 22px;
+         padding-top: 24px;
+      }
+
+      #recent-articles {
+         float: left;
+
+         h1 {
+            font-family: Palatino, serif;
+            font-size: 24px;
+            color: @headercolor;
+         }
+
+         ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+               font-family: Georgia, serif;
+               font-style: oblique;
+               color: @headercolor;
+               font-size: 18px;
+               line-height: 28px;
+               padding-left: 33px;
+               background: url(/images/ribbon.png) no-repeat 0 5px;
+
+               a {
+                  text-decoration: underline;
+                  color: @headercolor;
+               }
+
+               span {
+                  color: @datecolor;
+               }
+            }
+         }
+      }
+   }
+}
+
