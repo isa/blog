@@ -1,0 +1,12 @@
+---
+layout: "default"
+---
+<div class="article">
+   <%- @content %>
+</div>
+
+<div class="related">
+   <% for document in @getRelatedDocuments(): %>
+       <a href="<%= document.url %>"><%= document.title %></a><br/>
+   <% end %>
+</div>

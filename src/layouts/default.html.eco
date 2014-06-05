@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+   <%- @getBlock("meta").toHTML() %>
+   <%- @getBlock("styles").toHTML() %>
+
+   <!--Stylesheets-->
+   <link rel="stylesheet" href="/vendor/styles/normalize.min.css" />
+   <link rel="stylesheet" href="/vendor/styles/font-awesome.min.css">
+   <link rel="stylesheet" href="/vendor/styles/tomorrow.css">
+   <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+
+   <title><%= @document.title %></title>
+</head>
+
+<body>
+   <%- @content %>
+   <%- @getBlock("scripts").toHTML() %>
+</body>
+
+</html>
