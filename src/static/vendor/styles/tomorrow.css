@@ -1,5 +1,10 @@
 /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
 
+.hljs {
+  background-color: #fafafa !important;
+  line-height: 26px !important;
+}
+
 /* Tomorrow Comment */
 .hljs-comment,
 .hljs-title {

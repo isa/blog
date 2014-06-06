@@ -2,11 +2,33 @@
 layout: "default"
 ---
 <div class="article">
+   <div class="headline">
+      <img src="/images/<%= @document.headline %>" alt="headline" />
+   </div>
+   <div class="author">
+      <div id="avatar">
+         <img src="/images/avatar.png" alt="Isa Goksu" />
+         <div class="bar"></div>
+      </div>
+      <em class="date"><%= @moment(@document.date).format('MMMM DD') %></em>
+      <em class="date"><%= @moment(@document.date).format('YYYY') %></em>
+   </div>
    <%- @content %>
 </div>
 
 <div class="related">
+   <h1>See also...</h1>
+   <ul>
    <% for document in @getRelatedDocuments(): %>
-       <a href="<%= document.url %>"><%= document.title %></a><br/>
+       <li><a href="<%= document.url %>"><%= document.title %></a></li>
    <% end %>
+   </ul>
+</div>
+
+<div id="share">
+   <ul>
+      <li><a href="/"><i class="fa fa-home fa-2x"></i></a></li>
+      <li><a href="<%= @getTwitterLink(@document) %>"><i class="fa fa-twitter fa-2x"></i></a></li>
+      <li><a href="<%= @getFacebookLink(@document) %>"><i class="fa fa-facebook fa-2x"></i></a></li>
+   </ul>
 </div>
