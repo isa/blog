@@ -11,9 +11,9 @@ layout: "default"
          <div id="social-networks">
             <div id="strike-through"></div>
             <div id="container">
-               <i class="fa fa-twitter fa-3x"></i>
-               <i class="fa fa-linkedin-square fa-3x"></i>
-               <i class="fa fa-github-alt fa-3x"></i>
+               <a href="http://twitter.com/IsaGoksu" class="fa fa-twitter fa-3x" target="_blank"></a>
+               <a href="http://www.linkedin.com/in/IsaGoksu" class="fa fa-linkedin-square fa-3x" target="_blank"></a>
+               <a href="http://github.com/isa" class="fa fa-github-alt fa-3x" target="_blank"></a>
             </div>
          </div>
          <div id="id-tag">
