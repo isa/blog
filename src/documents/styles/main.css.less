@@ -4,9 +4,22 @@
 @datecolor: #cccccc;
 @blockwidth: 710px;
 
+.headerfont {
+   font-family: 'Merriweather', serif;
+   font-weight: 700;
+   color: @headercolor;
+}
+
+.bodyfont {
+   font-family: 'Merriweather', serif;
+   font-weight: 300;
+   color: @headercolor;
+}
+
 html, body {
    background-color: @bgcolor;
    height: 100%;
+   .bodyfont;
 }
 
 #verticle-align {
@@ -85,9 +98,8 @@ html, body {
          float: left;
 
          h1 {
-            font-family: Palatino, serif;
             font-size: 24px;
-            color: @headercolor;
+            .headerfont
          }
 
          ul {
@@ -96,9 +108,7 @@ html, body {
             padding: 0;
 
             li {
-               font-family: Georgia, serif;
                font-style: oblique;
-               color: @headercolor;
                font-size: 18px;
                line-height: 28px;
                padding-left: 33px;

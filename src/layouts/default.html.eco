@@ -2,8 +2,14 @@
 <html>
 
 <head>
+   <link href="/images/favicon.png" rel="icon" type="image/png">
+   <link href="/images/favicon.png" rel="shortcut icon" type="image/png">
+   <link href="/images/favicon.png" rel="apple-touch-icon" type="image/png">
+
    <%- @getBlock("meta").toHTML() %>
    <%- @getBlock("styles").toHTML() %>
+
+   <link href='http://fonts.googleapis.com/css?family=Merriweather:300,700,300italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
    <!--Stylesheets-->
    <link rel="stylesheet" href="/vendor/styles/normalize.min.css" />
