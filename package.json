@@ -18,7 +18,6 @@
     "docpad-plugin-sitemap": "~2.2.0",
     "docpad-plugin-marked": "~2.2.1",
     "cheerio": "^0.16.0",
-    "docpad-plugin-cmds": "~2.0.7",
     "docpad-plugin-related": "~2.2.2",
     "docpad-plugin-moment": "~2.0.2"
   },

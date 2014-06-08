@@ -27,13 +27,7 @@ layout: "default"
          </div>
          <div id="recent-articles">
             <h1>Recent articles...</h1>
-            <ul>
-               <li><a href="#">How to avoid null pointer exceptions?</a><span>, May 11, 2014</span></li>
-               <li><a href="#">Multiple dispatching</a><span>, May 3, 2014</span></li>
-               <li><a href="#">Scaling or not?</a><span>, April 27, 2014</span></li>
-               <li><a href="#">Gophers are working</a><span>, April 7, 2014</span></li>
-               <li><a href="#">Act like a senior developer</a><span>, March 29, 2014</span></li>
-            </ul>
+            <ul></ul>
          </div>
       </div>
    </div>

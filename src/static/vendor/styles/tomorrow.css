@@ -5,6 +5,15 @@
   line-height: 26px !important;
 }
 
+pre.highlight:before {
+  font-family: 'FontAwesome';
+  content: "\f121";
+  color: #e1e1e1;
+  font-size: 22px;
+  float: left;
+  margin-top: 10px;
+}
+
 /* Tomorrow Comment */
 .hljs-comment,
 .hljs-title {
