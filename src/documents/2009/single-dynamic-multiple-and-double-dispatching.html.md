@@ -61,7 +61,7 @@ SMSGateway gateway = new SMSGateway();
 gateway.send("Cya in 10!");
 ```
 
-In above example, compiler bound send(message) to Messenger and send(sms) to SMSGateway types. These are all single dispatch examples. No dynamic dispatching needed so far. However, if you have a polymorphic structure as in:
+In above example, compiler bound *send(message)* to *Messenger* and *send(sms)* to *SMSGateway* types. These are all single dispatch examples. No dynamic dispatching needed so far. However, if you have a polymorphic structure as in:
 
 ```java
 interface Messenger {

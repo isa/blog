@@ -15,7 +15,9 @@
 @drop_cap_font_size: 63px;
 @reference_bg_color: #faf4cc;
 @reference_color: #7d7753;
-@link_color: #7d7753;
+@link_color: #D5401A;
+@footer_link_color: #7d7753;
+@blockquote_color: #7d7753;
 
 .headerfont {
    font-family: 'Merriweather', serif;
@@ -261,6 +263,43 @@ div.article {
             padding-right: 9px;
          }
       }
+
+      a {
+         color: @link_color;
+         text-decoration: none;
+
+         &:hover {
+            text-decoration: underline;
+         }
+
+         &:before {
+            font-family: "FontAwesome";
+            content: "\f041";
+            padding-right: 3px;
+         }
+      }
+   }
+
+   blockquote {
+      p {
+         font-style: oblique;
+         font-size: @body_font_size + 2;
+         line-height: @body_line_height + 2;
+         color: @blockquote_color;
+
+         // reset dropcaps back
+         &:first-of-type {
+            &:first-letter {
+               color: @blockquote_color;
+               font-size: @body_font_size + 2;
+               font-weight: 300;
+               float: none;
+               display: block;
+               margin-top: 0;
+               padding-right: 0;
+            }
+         }
+      }
    }
 
    ul {
@@ -305,7 +344,7 @@ div.article {
             a {
                text-decoration: none;
                font-style: oblique;
-               color: @link_color;
+               color: @footer_link_color;
 
                &:hover {
                   text-decoration: underline;
