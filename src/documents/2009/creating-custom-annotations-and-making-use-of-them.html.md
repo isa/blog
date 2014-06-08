@@ -3,7 +3,7 @@ title: "Creating Custom Annotations and Making Use of Them"
 layout: "post"
 isPost: true
 date: "10-07-2009"
-headline: "random1.png"
+headline: "machine6.png"
 urls:
    - /2009/creating-custom-annotations-and-making-use-of-them
    - /2009/development/java/creating-custom-annotations-and-making-use-of-them
@@ -28,15 +28,7 @@ public @interface Copyright {
 }
 ```
 
-And that's it. Now it's ready to use! Now you can put copyright information to your classes :) Since we didn't define any **@Target** , you can use this annotation anywhere in your classes by default. If you want your annotation to be only available for class-wise or method-wise, you should define @Target annotation. Here is a little table of what **ElementType** options are available:
-
-* *ElementType.PACKAGE:* package header
-* *ElementType.TYPE:* class header
-* *ElementType.CONSTRUCTOR:* constructor header
-* *ElementType.METHOD:* method header
-* *ElementType.FIELD:* for class fields only
-* *ElementType.PARAMATER:* for method parameters only
-* *ElementType.LOCAL_VARIABLE:* for local variables only
+And that's it. Now it's ready to use! Now you can put copyright information to your classes :) Since we didn't define any **@Target** , you can use this annotation anywhere in your classes by default. If you want your annotation to be only available for class-wise or method-wise, you should define @Target annotation. Keep in mind, there are plenty of **ElementType** options are available in the SDK.
 
 If you want your annotation to be available in more than one place, just use array syntax as in:
 
@@ -190,5 +182,5 @@ public class Demo {
 ```
 
 1. http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html
-1. http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html
+1. http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html#enum.constant.summary
 1. http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html

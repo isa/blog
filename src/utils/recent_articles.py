@@ -30,4 +30,4 @@ for cdate, path in reversed(sorted(entries)):
       articles.append('<li><a href="%s">%s</a><span>%s</span></li>' % (url, title, parser.parse(date).strftime("%B %d, %Y")))
 
 print("Adding recent articles...")
-os.system("sed -i '' -e 's:<ul></ul>:<ul>%s</ul>:g' out/index.html" % "".join(articles))
+os.system("sed -i '' -e 's:<ul></ul>:<ul>%s</ul>:g' out/index.html" % "".join(articles[:11]))
