@@ -16,6 +16,7 @@ layout: "default"
    <%- @content %>
 </div>
 
+<% if @getRelatedDocuments().length: %>
 <div class="related">
    <h1>See also...</h1>
    <ul>
@@ -24,6 +25,7 @@ layout: "default"
    <% end %>
    </ul>
 </div>
+<% end %>
 
 <div id="share">
    <ul>
