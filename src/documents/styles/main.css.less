@@ -279,6 +279,12 @@ div.article {
             padding-right: 3px;
          }
       }
+
+      img {
+         display: block;
+         margin: 0 auto;
+         padding: 22px 0;
+      }
    }
 
    blockquote {
@@ -331,11 +337,10 @@ div.article {
    ol {
       &:last-of-type {
          margin: 0;
-         padding: 22px;
+         padding: 11px 22px;
          float: left;
          border-top: 2px solid lighten(@header_color, 60%);
          width: 3 * @block_width / 4;
-         padding-top: 11px;
          font-size: @body_font_size - 4;
 
          li {
