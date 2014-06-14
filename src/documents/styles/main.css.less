@@ -18,6 +18,7 @@
 @link_color: #D5401A;
 @footer_link_color: #7d7753;
 @blockquote_color: #7d7753;
+@toc_font_color: #bbbbbb;
 
 .headerfont {
    font-family: 'Merriweather', serif;
@@ -367,7 +368,7 @@ div.related {
    width: @content_width;
    min-height: 220px;
    background: url(/images/page-break.png) no-repeat center 22px;
-   margin-bottom: 144px;
+   margin-bottom: 99px;
 
    h1 {
       float: left;
@@ -435,5 +436,23 @@ div#share {
             padding-top: 9px;
          }
       }
+   }
+}
+
+div#toc {
+   position: fixed;
+   top: 71px;
+   left: 88px;
+   width: 220px;
+   font-style: oblique;
+   font-size: @body_font_size - 4;
+   color: @toc_font_color;
+
+   h3 {
+      font-weight: 300;
+   }
+
+   .floating-header {
+      display: none;
    }
 }

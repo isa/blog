@@ -27,6 +27,9 @@ layout: "default"
 </div>
 <% end %>
 
+<div id="toc">
+</div>
+
 <div id="share">
    <ul>
       <li><a href="/"><i class="fa fa-home fa-2x"></i></a></li>

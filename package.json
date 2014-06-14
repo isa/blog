@@ -19,7 +19,8 @@
     "docpad-plugin-marked": "~2.2.1",
     "cheerio": "^0.16.0",
     "docpad-plugin-related": "~2.2.2",
-    "docpad-plugin-moment": "~2.0.2"
+    "docpad-plugin-moment": "~2.0.2",
+    "docpad-plugin-coffeescript": "~2.4.0"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
