@@ -1,5 +1,5 @@
 ---
-title: "What is Docker? What Makes It Different From VMs"
+title: "What is Docker? What Makes It Different From VMs?"
 layout: "post"
 isPost: true
 date: "06-12-2014"
@@ -17,7 +17,7 @@ tags:
    - development
 ---
 
-# What is Docker and What Makes It Different From VMs
+# What is Docker and What Makes It Different From VMs?
 
 ## PAAS will be a really big in the near future. Considering the automation of the infrastructure and whole devops movement, I believe Docker stands a great chance.
 
@@ -61,7 +61,7 @@ So basically it allows you to create many isolated environments over a single \*
 
 Docker has 3 components: *Docker Daemon*, *Docker Images* and *Docker Repositories*. Docker Daemon runs as root and basically orchestrates all the containers. Docker Images are virtual OS images and technically they have way less footprint than the actual OS images. Due to the *AUFS* filesystem, all the committed writes to the filesystem are stacked, therefore can be unified to the last revision any point in time. Kinda like snapshots in the VM world, only better (like a VCS). Due to the nature of the filesystem all these write operations are also cacheable. Meaning, if Docker finds out that you don't have any changes up to a certain revision, it plays everything up to that particular revision from the cache and rest by applying the writes. This gives a huge performance benefits on provisioning time. On top of all these benefits, images can also be exchanged with other folks. Last component of Docker ecosystem is repositories. All this is that the images you have has to be stored somewhere whether it is private or public. Docker provides a public repository for everyone, however it is super easy to build your private repo as well.
 
-I'll create another article on how to make use of Docker for your development process with some real-world examples.
+There are plenty of tutorials on Docker usage. I actually intended to skip it, however I'm planning to create another article on how to make use of Docker for your development process with some real-world examples. Stay tuned...
 
 1. http://www.docker.io/
 1. http://blog.docker.com/2014/06/its-here-docker-1-0/
